@@ -31,16 +31,13 @@
 
   <!-- ========== ヒーロー ========== -->
   <section id="hero">
-    <div class="hero-bg-circle c1"></div>
-    <div class="hero-bg-circle c2"></div>
-    <div class="container hero-inner">
-      <div class="hero-content">
-        <div class="hero-tag">映像 × アニメーション × イラスト</div>
-        <h1 class="hero-title">
-          貴社の想いを<br>
-          <span class="highlight">映像の力</span>で<br>
-          届けます
-        </h1>
+    <div class="hero-body">
+      <div class="hero-eyebrow">映像 × アニメーション × イラスト</div>
+      <h1 class="hero-title">
+        貴社の想いを<br>
+        <em>映像の力</em>で届ける
+      </h1>
+      <div class="hero-sub-row">
         <p class="hero-desc">
           動画編集・アニメーション制作・イラスト作成を通じて、
           企業ブランドの価値を高め、ターゲットに響くビジュアルコンテンツを制作します。
@@ -50,21 +47,22 @@
           <a href="#services" class="btn-secondary">サービスを見る</a>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="hero-card fade-in">
-          <span class="card-icon">🎬</span>
-          <div class="card-title">動画編集</div>
-          <div class="card-sub">CM・採用・SNS広告</div>
-        </div>
-        <div class="hero-card fade-in" style="animation-delay:0.1s">
-          <span class="card-icon">✨</span>
-          <div class="card-title">アニメーション</div>
-          <div class="card-sub">モーション・2D/3D</div>
-        </div>
-        <div class="hero-card featured fade-in" style="animation-delay:0.2s">
-          <span class="card-icon">🎨</span>
-          <div class="card-title">イラスト制作</div>
-          <div class="card-sub">キャラクター・ロゴ・図解</div>
+    </div>
+    <div class="hero-ticker">
+      <div class="hero-ticker-inner">
+        <div class="hero-ticker-track">
+          <span class="ticker-item">🎬 動画編集<span class="dot"></span></span>
+          <span class="ticker-item">✨ アニメーション制作<span class="dot"></span></span>
+          <span class="ticker-item">🎨 イラスト作成<span class="dot"></span></span>
+          <span class="ticker-item">🎬 Video Editing<span class="dot"></span></span>
+          <span class="ticker-item">✨ Animation<span class="dot"></span></span>
+          <span class="ticker-item">🎨 Illustration<span class="dot"></span></span>
+          <span class="ticker-item">🎬 動画編集<span class="dot"></span></span>
+          <span class="ticker-item">✨ アニメーション制作<span class="dot"></span></span>
+          <span class="ticker-item">🎨 イラスト作成<span class="dot"></span></span>
+          <span class="ticker-item">🎬 Video Editing<span class="dot"></span></span>
+          <span class="ticker-item">✨ Animation<span class="dot"></span></span>
+          <span class="ticker-item">🎨 Illustration<span class="dot"></span></span>
         </div>
       </div>
     </div>
@@ -95,44 +93,32 @@
   <!-- ========== 事業紹介 ========== -->
   <section id="about" class="section">
     <div class="container about-inner">
-      <div class="about-illustration fade-in">
-        <div class="about-icon-card wide">
-          <span class="icon">🎥</span>
-          <div class="label">Video Production</div>
-        </div>
-        <div class="about-icon-card">
-          <span class="icon">🖼️</span>
-          <div class="label">Illustration</div>
-        </div>
-        <div class="about-icon-card">
-          <span class="icon">🌀</span>
-          <div class="label">Animation</div>
-        </div>
-      </div>
-      <div class="about-content fade-in">
+      <div class="about-left fade-in">
         <span class="section-label">About Us</span>
-        <h2 class="section-title">「伝える」から<br>「刺さる」へ</h2>
-        <p class="section-desc">
-          CreativeWorksは、映像・アニメーション・イラストの3領域を横断したクリエイティブチームです。
+        <h2 class="about-quote">「伝える」から<br><em>「刺さる」</em>へ</h2>
+        <p class="about-body">
+          映像・アニメーション・イラストの3領域を横断したクリエイティブチームです。
           単なる制作代行ではなく、お客様のビジネス課題を理解した上で、最適な表現方法を提案します。
         </p>
+      </div>
+      <div class="about-right fade-in">
         <div class="about-points">
           <div class="about-point">
-            <div class="point-icon">🎯</div>
+            <div class="point-num">01</div>
             <div class="point-text">
               <h4>目的から逆算した制作</h4>
               <p>「なぜ作るか」を最初に定義。認知・CV・採用など目的に合わせた表現を選びます。</p>
             </div>
           </div>
           <div class="about-point">
-            <div class="point-icon">⚡</div>
+            <div class="point-num">02</div>
             <div class="point-text">
               <h4>スピーディな対応</h4>
               <p>ご依頼から最短3営業日で初稿を提出。修正回数も明確にお約束します。</p>
             </div>
           </div>
           <div class="about-point">
-            <div class="point-icon">🔄</div>
+            <div class="point-num">03</div>
             <div class="point-text">
               <h4>ワンストップで完結</h4>
               <p>企画・脚本・制作・納品まで一社完結。窓口が一つなので手間がかかりません。</p>
@@ -152,53 +138,154 @@
         <p class="section-desc">映像・アニメーション・イラストの3領域で、貴社のニーズに対応します</p>
       </div>
       <div class="services-grid">
-        <!-- 動画編集 -->
-        <div class="service-card video fade-in">
-          <div class="service-icon-wrap">🎬</div>
-          <div class="service-name">動画編集</div>
-          <p class="service-desc">
-            撮影済み素材のカット編集からBGM・テロップ・カラーグレーディングまで、
-            目的とプラットフォームに最適化した動画に仕上げます。
-          </p>
-          <ul class="service-items">
-            <li class="service-item">企業PR・会社紹介動画</li>
-            <li class="service-item">採用・インタビュー動画</li>
-            <li class="service-item">SNS広告・縦型ショート動画</li>
-            <li class="service-item">セミナー・イベント映像</li>
-          </ul>
+        <div class="service-row fade-in">
+          <div class="service-num">01</div>
+          <div class="service-head">
+            <span class="service-icon-wrap">🎬</span>
+            <div class="service-name">動画編集</div>
+            <div class="service-en">Video Editing</div>
+          </div>
+          <div class="service-body">
+            <p class="service-desc">撮影済み素材のカット編集からBGM・テロップ・カラーグレーディングまで、目的とプラットフォームに最適化した動画に仕上げます。</p>
+            <ul class="service-items">
+              <li class="service-item">企業PR・会社紹介動画</li>
+              <li class="service-item">採用・インタビュー動画</li>
+              <li class="service-item">SNS広告・縦型ショート動画</li>
+              <li class="service-item">セミナー・イベント映像</li>
+            </ul>
+          </div>
         </div>
-        <!-- アニメーション -->
-        <div class="service-card animation fade-in">
-          <div class="service-icon-wrap">✨</div>
-          <div class="service-name">アニメーション制作</div>
-          <p class="service-desc">
-            サービス説明から世界観演出まで、2Dモーショングラフィックスや
-            キャラクターアニメーションで視覚的に伝えます。
-          </p>
-          <ul class="service-items">
-            <li class="service-item">モーショングラフィックス</li>
-            <li class="service-item">サービス解説アニメ</li>
-            <li class="service-item">キャラクターアニメーション</li>
-            <li class="service-item">ロゴ・タイトルアニメ</li>
-          </ul>
+        <div class="service-row fade-in">
+          <div class="service-num">02</div>
+          <div class="service-head">
+            <span class="service-icon-wrap">✨</span>
+            <div class="service-name">アニメーション制作</div>
+            <div class="service-en">Animation</div>
+          </div>
+          <div class="service-body">
+            <p class="service-desc">サービス説明から世界観演出まで、2Dモーショングラフィックスやキャラクターアニメーションで視覚的に伝えます。</p>
+            <ul class="service-items">
+              <li class="service-item">モーショングラフィックス</li>
+              <li class="service-item">サービス解説アニメ</li>
+              <li class="service-item">キャラクターアニメーション</li>
+              <li class="service-item">ロゴ・タイトルアニメ</li>
+            </ul>
+          </div>
         </div>
-        <!-- イラスト -->
-        <div class="service-card illustration fade-in">
-          <div class="service-icon-wrap">🎨</div>
-          <div class="service-name">イラスト作成</div>
-          <p class="service-desc">
-            ビジネス資料・Webサイト・SNS投稿など、
-            用途に合わせたオリジナルイラストを制作します。
-          </p>
-          <ul class="service-items">
-            <li class="service-item">キャラクター・マスコット</li>
-            <li class="service-item">図解・インフォグラフィック</li>
-            <li class="service-item">Web・アプリ用バナー</li>
-            <li class="service-item">ロゴ・アイコン制作</li>
-          </ul>
+        <div class="service-row fade-in">
+          <div class="service-num">03</div>
+          <div class="service-head">
+            <span class="service-icon-wrap">🎨</span>
+            <div class="service-name">イラスト作成</div>
+            <div class="service-en">Illustration</div>
+          </div>
+          <div class="service-body">
+            <p class="service-desc">ビジネス資料・Webサイト・SNS投稿など、用途に合わせたオリジナルイラストを制作します。</p>
+            <ul class="service-items">
+              <li class="service-item">キャラクター・マスコット</li>
+              <li class="service-item">図解・インフォグラフィック</li>
+              <li class="service-item">Web・アプリ用バナー</li>
+              <li class="service-item">ロゴ・アイコン制作</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ========== 実績スライドショー ========== -->
+  <section id="works" class="section">
+    <div class="container">
+      <div class="works-header fade-in">
+        <div class="works-header-left">
+          <span class="section-label">Works</span>
+          <h2 class="section-title">制作実績</h2>
+        </div>
+        <div class="works-nav">
+          <button class="works-arrow" id="worksPrev" aria-label="前へ">←</button>
+          <span class="works-count"><span id="worksCurrentNum">1</span> / <span id="worksTotalNum">6</span></span>
+          <button class="works-arrow" id="worksNext" aria-label="次へ">→</button>
+        </div>
+      </div>
+    </div>
+    <div class="works-slider-wrap">
+      <div class="works-track" id="worksTrack">
+
+        <div class="work-card">
+          <div class="work-thumb" style="background: linear-gradient(135deg, #0C0C0C 0%, #2a2a2a 100%);">
+            <span class="work-thumb-icon">🎬</span>
+            <div class="work-thumb-label">Video</div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">動画編集</span>
+            <h3 class="work-title">製造業 採用動画</h3>
+            <p class="work-desc">工場の現場を舞台にした採用向けドキュメンタリー動画。社員インタビューと現場映像を組み合わせ、リアルな職場の魅力を伝えました。</p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-thumb" style="background: linear-gradient(135deg, #FF4800 0%, #ff8c00 100%);">
+            <span class="work-thumb-icon">✨</span>
+            <div class="work-thumb-label">Animation</div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">アニメーション</span>
+            <h3 class="work-title">SaaS サービス紹介アニメ</h3>
+            <p class="work-desc">複雑なBtoBサービスの仕組みを60秒のモーショングラフィックスで分かりやすく説明。LP掲載後、CVRが1.4倍に向上。</p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-thumb" style="background: linear-gradient(135deg, #1a1a4e 0%, #4a3fa0 100%);">
+            <span class="work-thumb-icon">🎨</span>
+            <div class="work-thumb-label">Illustration</div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">イラスト</span>
+            <h3 class="work-title">スタートアップ キャラクター制作</h3>
+            <p class="work-desc">ブランドの世界観を体現するオリジナルマスコットキャラクターを制作。Webサイト・SNS・資料で統一感のあるビジュアルを実現。</p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-thumb" style="background: linear-gradient(135deg, #0a3d2e 0%, #1a7a5a 100%);">
+            <span class="work-thumb-icon">🎬</span>
+            <div class="work-thumb-label">Video</div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">動画編集</span>
+            <h3 class="work-title">飲食チェーン SNS広告動画</h3>
+            <p class="work-desc">縦型15秒の短尺広告を月10本制作。テンポよいカットとテロップで視認性を高め、Instagram広告のCTRを平均2.1倍改善。</p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-thumb" style="background: linear-gradient(135deg, #2d1a00 0%, #8B4513 100%);">
+            <span class="work-thumb-icon">✨</span>
+            <div class="work-thumb-label">Animation</div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">アニメーション</span>
+            <h3 class="work-title">不動産 ロゴアニメーション</h3>
+            <p class="work-desc">会社ロゴを動かすオープニングアニメーションを制作。展示会・商談・動画冒頭など幅広いシーンで活用されています。</p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-thumb" style="background: linear-gradient(135deg, #1a0a2e 0%, #6a1a9a 100%);">
+            <span class="work-thumb-icon">🎨</span>
+            <div class="work-thumb-label">Illustration</div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">イラスト</span>
+            <h3 class="work-title">医療法人 図解イラスト</h3>
+            <p class="work-desc">患者向けの説明資料・院内ポスター用に、やさしい雰囲気のイラストを多数制作。専門的な内容をわかりやすく視覚化しました。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="works-dots" id="worksDots"></div>
   </section>
 
   <!-- ========== 料金 ========== -->
@@ -374,9 +461,9 @@
       </div>
       <div class="flow-steps">
         <div class="flow-step fade-in">
-          <div class="step-circle">
-            💬
-            <div class="step-num">1</div>
+          <div class="step-left">
+            <div class="step-num-label">Step 01</div>
+            <div class="step-icon">💬</div>
           </div>
           <div>
             <div class="step-title">ヒアリング</div>
@@ -384,9 +471,9 @@
           </div>
         </div>
         <div class="flow-step fade-in">
-          <div class="step-circle">
-            📋
-            <div class="step-num">2</div>
+          <div class="step-left">
+            <div class="step-num-label">Step 02</div>
+            <div class="step-icon">📋</div>
           </div>
           <div>
             <div class="step-title">ご提案・お見積り</div>
@@ -394,9 +481,9 @@
           </div>
         </div>
         <div class="flow-step fade-in">
-          <div class="step-circle">
-            ✍️
-            <div class="step-num">3</div>
+          <div class="step-left">
+            <div class="step-num-label">Step 03</div>
+            <div class="step-icon">✍️</div>
           </div>
           <div>
             <div class="step-title">制作・初稿提出</div>
@@ -404,9 +491,9 @@
           </div>
         </div>
         <div class="flow-step fade-in">
-          <div class="step-circle">
-            🔄
-            <div class="step-num">4</div>
+          <div class="step-left">
+            <div class="step-num-label">Step 04</div>
+            <div class="step-icon">🔄</div>
           </div>
           <div>
             <div class="step-title">修正・調整</div>
@@ -414,9 +501,9 @@
           </div>
         </div>
         <div class="flow-step fade-in">
-          <div class="step-circle">
-            🎉
-            <div class="step-num">5</div>
+          <div class="step-left">
+            <div class="step-num-label">Step 05</div>
+            <div class="step-icon">🎉</div>
           </div>
           <div>
             <div class="step-title">納品・アフターケア</div>
@@ -455,6 +542,27 @@
               <strong>相談無料</strong>
               お見積り・ご相談は費用がかかりません
             </div>
+          </div>
+        </div>
+        <div class="contact-sns">
+          <p class="contact-sns-label">SNS・公式サイト</p>
+          <div class="sns-links">
+            <a href="#" class="sns-link" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </a>
+            <a href="#" class="sns-link" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              YouTube
+            </a>
+            <a href="#" class="sns-link" aria-label="X (Twitter)" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              X (Twitter)
+            </a>
+            <a href="#" class="sns-link sns-link--web" aria-label="公式サイト" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              公式サイト
+            </a>
           </div>
         </div>
       </div>
@@ -515,6 +623,20 @@
         <div class="footer-brand">
           <a href="#" class="nav-logo">Creative<span>Works</span></a>
           <p>動画編集・アニメーション制作・イラスト作成を通じて、企業の伝えたいことを映像の力で届けます。</p>
+          <div class="footer-sns">
+            <a href="#" class="footer-sns-icon" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="footer-sns-icon" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="#" class="footer-sns-icon" aria-label="X" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="footer-sns-icon" aria-label="公式サイト" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+          </div>
         </div>
         <div class="footer-col">
           <h4>サービス</h4>

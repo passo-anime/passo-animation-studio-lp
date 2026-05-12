@@ -37,6 +37,92 @@ const observer = new IntersectionObserver(
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 /* ============================================
+   実績スライドショー
+   ============================================ */
+(function () {
+  const track = document.getElementById('worksTrack');
+  const prevBtn = document.getElementById('worksPrev');
+  const nextBtn = document.getElementById('worksNext');
+  const currentNumEl = document.getElementById('worksCurrentNum');
+  const totalNumEl = document.getElementById('worksTotalNum');
+  const dotsWrap = document.getElementById('worksDots');
+
+  if (!track) return;
+
+  const cards = Array.from(track.children);
+  const total = cards.length;
+  let current = 0;
+  let autoTimer;
+
+  // 1画面に見えるカード数をCSSブレークポイントに合わせて取得
+  function getVisible() {
+    if (window.innerWidth <= 640) return 1;
+    if (window.innerWidth <= 900) return 2;
+    return 3;
+  }
+
+  // ドットを生成
+  function buildDots() {
+    dotsWrap.innerHTML = '';
+    const steps = total - getVisible() + 1;
+    for (let i = 0; i < steps; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'works-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `${i + 1}番目の実績へ`);
+      dot.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(dot);
+    }
+  }
+
+  function maxIndex() { return Math.max(0, total - getVisible()); }
+
+  function goTo(index) {
+    current = Math.max(0, Math.min(index, maxIndex()));
+    const cardWidth = cards[0].offsetWidth + 20; // gap: 20px
+    track.style.transform = `translateX(-${current * cardWidth}px)`;
+    currentNumEl.textContent = current + 1;
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current >= maxIndex();
+    dotsWrap.querySelectorAll('.works-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+    resetAuto();
+  }
+
+  function resetAuto() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(() => {
+      goTo(current >= maxIndex() ? 0 : current + 1);
+    }, 4000);
+  }
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+
+  // タッチスワイプ
+  let startX = 0;
+  track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+  });
+
+  // ホバー中は自動スクロール停止
+  track.parentElement.addEventListener('mouseenter', () => clearInterval(autoTimer));
+  track.parentElement.addEventListener('mouseleave', resetAuto);
+
+  // リサイズ時に再計算
+  window.addEventListener('resize', () => {
+    buildDots();
+    goTo(Math.min(current, maxIndex()));
+  });
+
+  totalNumEl.textContent = total;
+  buildDots();
+  goTo(0);
+})();
+
+/* ============================================
    料金タブ切り替え
    ============================================ */
 document.querySelectorAll('.pricing-tab').forEach(tab => {
