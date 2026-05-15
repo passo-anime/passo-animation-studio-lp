@@ -141,6 +141,38 @@ ul { list-style: none; }
   justify-content: flex-end;
   padding: 64px 0 0;
   overflow: hidden;
+  position: relative;
+}
+
+/* 背景スライドショー */
+.hero-bg-slides {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.8s ease;
+}
+
+.hero-slide.active { opacity: 1; }
+
+/* テキスト視認性オーバーレイ */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.72) 0%,
+    rgba(10, 10, 10, 0.55) 50%,
+    rgba(10, 10, 10, 0.85) 100%
+  );
 }
 
 .hero-body {
@@ -152,7 +184,12 @@ ul { list-style: none; }
   max-width: var(--max-width);
   margin: 0 auto;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
+
+/* ticerもオーバーレイより前面に */
+.hero-ticker { position: relative; z-index: 2; }
 
 /* タイトル下：実績画像 */
 .hero-images {
