@@ -54,12 +54,8 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   let current = 0;
   let autoTimer;
 
-  // 1画面に見えるカード数をCSSブレークポイントに合わせて取得
-  function getVisible() {
-    if (window.innerWidth <= 640) return 1;
-    if (window.innerWidth <= 900) return 2;
-    return 3;
-  }
+  // ヒーロー内スライダーは常に1枚表示
+  function getVisible() { return 1; }
 
   // ドットを生成
   function buildDots() {
@@ -143,6 +139,15 @@ document.querySelectorAll('.pricing-tab').forEach(tab => {
 });
 
 /* ============================================
+   Supabase クライアント初期化
+   ============================================ */
+const { createClient } = supabase;
+const db = createClient(
+  'https://qcuhcwhbvvoeyikwijco.supabase.co',
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFjdWhjd2hidnZvZXlpa3dpamNvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg4MjI3MDcsImV4cCI6MjA5NDM5ODcwN30.TlVdLVKa2u0VrkTy8gZcEwWl3SAOp0A5SaT6qccEGBA'
+);
+
+/* ============================================
    お問い合わせフォーム バリデーション & 送信処理
    ============================================ */
 const form = document.getElementById('contactForm');
@@ -151,7 +156,7 @@ const formMessage = document.getElementById('form-message');
 
 function showMessage(text, type) {
   formMessage.textContent = text;
-  formMessage.className = type; // 'success' or 'error'
+  formMessage.className = type;
 }
 
 function validateEmail(email) {
@@ -161,10 +166,11 @@ function validateEmail(email) {
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  // --- バリデーション ---
   const company = form.company.value.trim();
-  const name = form.name.value.trim();
-  const email = form.email.value.trim();
+  const name    = form.name.value.trim();
+  const email   = form.email.value.trim();
+  const service = form.service.value;
+  const budget  = form.budget.value;
   const message = form.message.value.trim();
 
   if (!company) { showMessage('会社名を入力してください。', 'error'); return; }
@@ -172,21 +178,20 @@ form.addEventListener('submit', async (e) => {
   if (!email || !validateEmail(email)) { showMessage('正しいメールアドレスを入力してください。', 'error'); return; }
   if (!message) { showMessage('ご相談内容を入力してください。', 'error'); return; }
 
-  // --- 送信中状態 ---
   submitBtn.disabled = true;
   submitBtn.textContent = '送信中...';
   formMessage.className = '';
 
-  /*
-   * ここに実際の送信処理を実装してください。
-   * 例: fetch('/api/contact', { method: 'POST', body: new FormData(form) })
-   *
-   * 以下はデモ用の疑似処理です（1秒後に成功）。
-   */
-  await new Promise(resolve => setTimeout(resolve, 1000));
+  const { error } = await db.from('contacts').insert({
+    company, name, email, service, budget, message
+  });
 
-  showMessage('お問い合わせを受け付けました。1営業日以内にご返信いたします。', 'success');
-  form.reset();
+  if (error) {
+    showMessage('送信に失敗しました。時間をおいて再度お試しください。', 'error');
+  } else {
+    showMessage('お問い合わせを受け付けました。1営業日以内にご返信いたします。', 'success');
+    form.reset();
+  }
 
   submitBtn.disabled = false;
   submitBtn.textContent = '送信する →';

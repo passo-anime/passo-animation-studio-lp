@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CreativeWorks | 動画編集・アニメーション・イラスト制作</title>
-  <meta name="description" content="動画編集・アニメーション制作・イラスト作成のプロフェッショナルチーム。企業のブランドを動かす映像表現を提供します。" />
+  <title>パッソアニメーションスタジオ | 企業様向けサイト
+  </title>
+  <meta name="description" content="企業様向けの事業紹介サイト。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
@@ -15,11 +16,12 @@
   <!-- ========== ナビゲーション ========== -->
   <nav id="navbar">
     <div class="container nav-inner">
-      <a href="#" class="nav-logo">Creative<span>Works</span></a>
+      <a href="#" class="nav-logo">パッソアニメーションスタジオ</a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">事業紹介</a></li>
         <li><a href="#services">サービス</a></li>
         <li><a href="#pricing">料金</a></li>
+        <li><a href="#portfolio">ポートフォリオ</a></li>
         <li><a href="#flow">制作の流れ</a></li>
         <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
       </ul>
@@ -32,15 +34,28 @@
   <!-- ========== ヒーロー ========== -->
   <section id="hero">
     <div class="hero-body">
-      <div class="hero-eyebrow">映像 × アニメーション × イラスト</div>
+      <div class="hero-eyebrow">案件120件以上の信頼実績</div>
       <h1 class="hero-title">
-        貴社の想いを<br>
-        <em>映像の力</em>で届ける
+        <em>パッソアニメーションスタジオ</em>
+        <span class="hero-title-sub">アニメ・動画・LP制作のご案内</span>
       </h1>
+
+      <!-- タイトル下：実績画像を半透明で表示 -->
+      <div class="hero-images">
+
+      </div>
+
+      <div class="hero-tags">
+        <span class="hero-tag-pill">🎞️ オリジナルアニメ</span>
+        <span class="hero-tag-pill">🎬 動画編集</span>
+        <span class="hero-tag-pill">🎙️ ナレーション・声優</span>
+        <span class="hero-tag-pill">🎨 イラスト制作</span>
+        <span class="hero-tag-pill">📐 デザイン</span>
+        <span class="hero-tag-pill">🖥️ LP制作</span>
+      </div>
       <div class="hero-sub-row">
         <p class="hero-desc">
-          動画編集・アニメーション制作・イラスト作成を通じて、
-          企業ブランドの価値を高め、ターゲットに響くビジュアルコンテンツを制作します。
+          60名以上のクリエイターが企業様のご希望に寄り添い、幅広い制作に対応。
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn-primary">無料で相談する →</a>
@@ -51,18 +66,20 @@
     <div class="hero-ticker">
       <div class="hero-ticker-inner">
         <div class="hero-ticker-track">
+          <span class="ticker-item">🎞️ オリジナルアニメ動画<span class="dot"></span></span>
           <span class="ticker-item">🎬 動画編集<span class="dot"></span></span>
-          <span class="ticker-item">✨ アニメーション制作<span class="dot"></span></span>
-          <span class="ticker-item">🎨 イラスト作成<span class="dot"></span></span>
-          <span class="ticker-item">🎬 Video Editing<span class="dot"></span></span>
-          <span class="ticker-item">✨ Animation<span class="dot"></span></span>
-          <span class="ticker-item">🎨 Illustration<span class="dot"></span></span>
+          <span class="ticker-item">🎙️ ナレーション・声優<span class="dot"></span></span>
+          <span class="ticker-item">🎨 イラスト制作<span class="dot"></span></span>
+          <span class="ticker-item">📐 デザイン<span class="dot"></span></span>
+          <span class="ticker-item">🖥️ LP制作<span class="dot"></span></span>
+          <span class="ticker-item">📱 SNS企画・運用<span class="dot"></span></span>
+          <span class="ticker-item">🎞️ オリジナルアニメ動画<span class="dot"></span></span>
           <span class="ticker-item">🎬 動画編集<span class="dot"></span></span>
-          <span class="ticker-item">✨ アニメーション制作<span class="dot"></span></span>
-          <span class="ticker-item">🎨 イラスト作成<span class="dot"></span></span>
-          <span class="ticker-item">🎬 Video Editing<span class="dot"></span></span>
-          <span class="ticker-item">✨ Animation<span class="dot"></span></span>
-          <span class="ticker-item">🎨 Illustration<span class="dot"></span></span>
+          <span class="ticker-item">🎙️ ナレーション・声優<span class="dot"></span></span>
+          <span class="ticker-item">🎨 イラスト制作<span class="dot"></span></span>
+          <span class="ticker-item">📐 デザイン<span class="dot"></span></span>
+          <span class="ticker-item">🖥️ LP制作<span class="dot"></span></span>
+          <span class="ticker-item">📱 SNS企画・運用<span class="dot"></span></span>
         </div>
       </div>
     </div>
@@ -141,168 +158,104 @@
         <div class="service-row fade-in">
           <div class="service-num">01</div>
           <div class="service-head">
-            <span class="service-icon-wrap">🎬</span>
-            <div class="service-name">動画編集</div>
-            <div class="service-en">Video Editing</div>
+            <span class="service-icon-wrap">🎞️</span>
+            <div class="service-name">オリジナルアニメ動画</div>
+            <div class="service-en">Original Animation</div>
           </div>
           <div class="service-body">
-            <p class="service-desc">撮影済み素材のカット編集からBGM・テロップ・カラーグレーディングまで、目的とプラットフォームに最適化した動画に仕上げます。</p>
+            <p class="service-desc">マンガ・パペット・フルアニメーションと幅広いスタイルに対応。キャラクターの世界観をそのまま映像に落とし込みます。</p>
             <ul class="service-items">
-              <li class="service-item">企業PR・会社紹介動画</li>
-              <li class="service-item">採用・インタビュー動画</li>
-              <li class="service-item">SNS広告・縦型ショート動画</li>
-              <li class="service-item">セミナー・イベント映像</li>
+              <li class="service-item">マンガ動画</li>
+              <li class="service-item">パペットアニメ動画</li>
+              <li class="service-item">フルアニメーション動画</li>
             </ul>
           </div>
         </div>
         <div class="service-row fade-in">
           <div class="service-num">02</div>
           <div class="service-head">
-            <span class="service-icon-wrap">✨</span>
-            <div class="service-name">アニメーション制作</div>
-            <div class="service-en">Animation</div>
+            <span class="service-icon-wrap">🎬</span>
+            <div class="service-name">動画編集</div>
+            <div class="service-en">Video Editing</div>
           </div>
           <div class="service-body">
-            <p class="service-desc">サービス説明から世界観演出まで、2Dモーショングラフィックスやキャラクターアニメーションで視覚的に伝えます。</p>
+            <p class="service-desc">ショート動画から長尺の企業PR動画まで、目的とプラットフォームに最適化した動画に仕上げます。撮影にも対応しています。</p>
             <ul class="service-items">
-              <li class="service-item">モーショングラフィックス</li>
-              <li class="service-item">サービス解説アニメ</li>
-              <li class="service-item">キャラクターアニメーション</li>
-              <li class="service-item">ロゴ・タイトルアニメ</li>
+              <li class="service-item">ショート動画（Instagram・TikTok・YouTube）</li>
+              <li class="service-item">長尺動画（YouTube用）</li>
+              <li class="service-item">HP掲載用 企業PR動画</li>
+              <li class="service-item">撮影</li>
             </ul>
           </div>
         </div>
         <div class="service-row fade-in">
           <div class="service-num">03</div>
           <div class="service-head">
-            <span class="service-icon-wrap">🎨</span>
-            <div class="service-name">イラスト作成</div>
-            <div class="service-en">Illustration</div>
+            <span class="service-icon-wrap">🎙️</span>
+            <div class="service-name">ナレーション・声優</div>
+            <div class="service-en">Narration / Voice</div>
           </div>
           <div class="service-body">
-            <p class="service-desc">ビジネス資料・Webサイト・SNS投稿など、用途に合わせたオリジナルイラストを制作します。</p>
+            <p class="service-desc">動画・アニメ・CM・企業VP向けのナレーションおよびキャラクターボイスに対応。動画制作とのセット依頼も歓迎です。</p>
             <ul class="service-items">
-              <li class="service-item">キャラクター・マスコット</li>
-              <li class="service-item">図解・インフォグラフィック</li>
-              <li class="service-item">Web・アプリ用バナー</li>
-              <li class="service-item">ロゴ・アイコン制作</li>
+              <li class="service-item">CM・企業VP用ナレーション</li>
+              <li class="service-item">アニメキャラクター声優</li>
+              <li class="service-item">動画制作とのセット対応</li>
             </ul>
           </div>
         </div>
         <div class="service-row fade-in">
           <div class="service-num">04</div>
           <div class="service-head">
+            <span class="service-icon-wrap">🎨</span>
+            <div class="service-name">イラスト制作</div>
+            <div class="service-en">Illustration</div>
+          </div>
+          <div class="service-body">
+            <p class="service-desc">キャラクターデザインからコンテ制作まで、用途に合わせたオリジナルイラストを制作します。</p>
+            <ul class="service-items">
+              <li class="service-item">キャラクターデザイン</li>
+              <li class="service-item">アイコン制作</li>
+              <li class="service-item">４コマ漫画</li>
+              <li class="service-item">撮影用の絵コンテ制作</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-row fade-in">
+          <div class="service-num">05</div>
+          <div class="service-head">
+            <span class="service-icon-wrap">📐</span>
+            <div class="service-name">デザイン</div>
+            <div class="service-en">Design</div>
+          </div>
+          <div class="service-body">
+            <p class="service-desc">チラシ・パンフレット・名刺など、印刷物から販促物まで幅広いデザイン制作に対応します。</p>
+            <ul class="service-items">
+              <li class="service-item">チラシ</li>
+              <li class="service-item">パンフレット</li>
+              <li class="service-item">名刺</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-row fade-in">
+          <div class="service-num">06</div>
+          <div class="service-head">
             <span class="service-icon-wrap">🖥️</span>
             <div class="service-name">LP制作</div>
             <div class="service-en">Landing Page</div>
           </div>
           <div class="service-body">
-            <p class="service-desc">新規顧客の獲得・問い合わせ増加を目的としたランディングページを制作します。デザインからコーディングまで一貫対応します。</p>
+            <p class="service-desc">新規顧客の獲得・お問い合わせ増加を目的としたランディングページを制作します。デザインからコーディングまで一貫対応。</p>
             <ul class="service-items">
+              <li class="service-item">1ページ 3万円〜</li>
               <li class="service-item">サービス・商品紹介LP</li>
               <li class="service-item">採用・求人LP</li>
               <li class="service-item">イベント・セミナーLP</li>
-              <li class="service-item">既存サイトのリニューアル</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- ========== 実績スライドショー ========== -->
-  <section id="works" class="section">
-    <div class="container">
-      <div class="works-header fade-in">
-        <div class="works-header-left">
-          <span class="section-label">Works</span>
-          <h2 class="section-title">制作実績</h2>
-        </div>
-        <div class="works-nav">
-          <button class="works-arrow" id="worksPrev" aria-label="前へ">←</button>
-          <span class="works-count"><span id="worksCurrentNum">1</span> / <span id="worksTotalNum">6</span></span>
-          <button class="works-arrow" id="worksNext" aria-label="次へ">→</button>
-        </div>
-      </div>
-    </div>
-    <div class="works-slider-wrap">
-      <div class="works-track" id="worksTrack">
-
-        <div class="work-card">
-          <div class="work-thumb" style="background: linear-gradient(135deg, #0C0C0C 0%, #2a2a2a 100%);">
-            <span class="work-thumb-icon">🎬</span>
-            <div class="work-thumb-label">Video</div>
-          </div>
-          <div class="work-info">
-            <span class="work-tag">動画編集</span>
-            <h3 class="work-title">製造業 採用動画</h3>
-            <p class="work-desc">工場の現場を舞台にした採用向けドキュメンタリー動画。社員インタビューと現場映像を組み合わせ、リアルな職場の魅力を伝えました。</p>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <div class="work-thumb" style="background: linear-gradient(135deg, #FF4800 0%, #ff8c00 100%);">
-            <span class="work-thumb-icon">✨</span>
-            <div class="work-thumb-label">Animation</div>
-          </div>
-          <div class="work-info">
-            <span class="work-tag">アニメーション</span>
-            <h3 class="work-title">SaaS サービス紹介アニメ</h3>
-            <p class="work-desc">複雑なBtoBサービスの仕組みを60秒のモーショングラフィックスで分かりやすく説明。LP掲載後、CVRが1.4倍に向上。</p>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <div class="work-thumb" style="background: linear-gradient(135deg, #1a1a4e 0%, #4a3fa0 100%);">
-            <span class="work-thumb-icon">🎨</span>
-            <div class="work-thumb-label">Illustration</div>
-          </div>
-          <div class="work-info">
-            <span class="work-tag">イラスト</span>
-            <h3 class="work-title">スタートアップ キャラクター制作</h3>
-            <p class="work-desc">ブランドの世界観を体現するオリジナルマスコットキャラクターを制作。Webサイト・SNS・資料で統一感のあるビジュアルを実現。</p>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <div class="work-thumb" style="background: linear-gradient(135deg, #0a3d2e 0%, #1a7a5a 100%);">
-            <span class="work-thumb-icon">🎬</span>
-            <div class="work-thumb-label">Video</div>
-          </div>
-          <div class="work-info">
-            <span class="work-tag">動画編集</span>
-            <h3 class="work-title">飲食チェーン SNS広告動画</h3>
-            <p class="work-desc">縦型15秒の短尺広告を月10本制作。テンポよいカットとテロップで視認性を高め、Instagram広告のCTRを平均2.1倍改善。</p>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <div class="work-thumb" style="background: linear-gradient(135deg, #2d1a00 0%, #8B4513 100%);">
-            <span class="work-thumb-icon">✨</span>
-            <div class="work-thumb-label">Animation</div>
-          </div>
-          <div class="work-info">
-            <span class="work-tag">アニメーション</span>
-            <h3 class="work-title">不動産 ロゴアニメーション</h3>
-            <p class="work-desc">会社ロゴを動かすオープニングアニメーションを制作。展示会・商談・動画冒頭など幅広いシーンで活用されています。</p>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <div class="work-thumb" style="background: linear-gradient(135deg, #1a0a2e 0%, #6a1a9a 100%);">
-            <span class="work-thumb-icon">🎨</span>
-            <div class="work-thumb-label">Illustration</div>
-          </div>
-          <div class="work-info">
-            <span class="work-tag">イラスト</span>
-            <h3 class="work-title">医療法人 図解イラスト</h3>
-            <p class="work-desc">患者向けの説明資料・院内ポスター用に、やさしい雰囲気のイラストを多数制作。専門的な内容をわかりやすく視覚化しました。</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="works-dots" id="worksDots"></div>
   </section>
 
   <!-- ========== 料金 ========== -->
@@ -311,160 +264,173 @@
       <div class="pricing-header fade-in">
         <span class="section-label">Pricing</span>
         <h2 class="section-title">料金プラン</h2>
-        <p class="section-desc">ご予算や規模に合わせて3プランをご用意しています。詳細はお気軽にご相談ください。</p>
+        <p class="section-desc">各サービスの費用感です。詳細・細かいご要望はお気軽にご相談ください。</p>
       </div>
 
       <!-- タブ -->
       <div class="pricing-tabs fade-in">
-        <button class="pricing-tab active" data-target="tab-video">動画編集</button>
-        <button class="pricing-tab" data-target="tab-animation">アニメーション</button>
-        <button class="pricing-tab" data-target="tab-illustration">イラスト</button>
+        <button class="pricing-tab active" data-target="tab-anime">アニメ・動画</button>
+        <button class="pricing-tab" data-target="tab-illust">イラスト・デザイン</button>
+        <button class="pricing-tab" data-target="tab-lp">LP・サブスク</button>
       </div>
 
-      <!-- 動画編集プラン -->
-      <div class="pricing-plans active" id="tab-video">
+      <!-- アニメ・動画プラン -->
+      <div class="pricing-plans active" id="tab-anime">
         <div class="plan-card fade-in">
-          <div class="plan-name">ライト</div>
-          <div class="plan-price">¥30,000<span>〜</span></div>
-          <div class="plan-period">1本あたり（3分以内）</div>
+          <div class="plan-name">ショート動画編集</div>
+          <div class="plan-price">要<span>相談</span></div>
+          <div class="plan-period">Instagram・TikTok・YouTube Shorts</div>
           <div class="plan-divider"></div>
           <ul class="plan-features">
             <li class="plan-feature"><span class="check yes">✓</span>カット編集・BGM</li>
             <li class="plan-feature"><span class="check yes">✓</span>テロップ挿入</li>
-            <li class="plan-feature"><span class="check yes">✓</span>修正2回まで</li>
-            <li class="plan-feature disabled"><span class="check no">✗</span>カラーグレーディング</li>
-            <li class="plan-feature disabled"><span class="check no">✗</span>モーションテキスト</li>
+            <li class="plan-feature"><span class="check yes">✓</span>縦型・横型対応</li>
+            <li class="plan-feature"><span class="check yes">✓</span>撮影も対応可</li>
           </ul>
           <button class="plan-cta" onclick="location.href='#contact'">相談する</button>
         </div>
         <div class="plan-card popular fade-in">
-          <div class="plan-badge">人気No.1</div>
-          <div class="plan-name">スタンダード</div>
-          <div class="plan-price">¥60,000<span>〜</span></div>
-          <div class="plan-period">1本あたり（5分以内）</div>
+          <div class="plan-badge">人気</div>
+          <div class="plan-name">オリジナルアニメ動画</div>
+          <div class="plan-price">要<span>相談</span></div>
+          <div class="plan-period">マンガ・パペット・フルアニメ</div>
           <div class="plan-divider"></div>
           <ul class="plan-features">
-            <li class="plan-feature"><span class="check yes">✓</span>カット編集・BGM</li>
-            <li class="plan-feature"><span class="check yes">✓</span>テロップ挿入</li>
-            <li class="plan-feature"><span class="check yes">✓</span>修正3回まで</li>
+            <li class="plan-feature"><span class="check yes">✓</span>マンガ動画</li>
+            <li class="plan-feature"><span class="check yes">✓</span>パペットアニメ動画</li>
+            <li class="plan-feature"><span class="check yes">✓</span>フルアニメーション動画</li>
+            <li class="plan-feature"><span class="check yes">✓</span>ナレーション・声優も対応</li>
+          </ul>
+          <button class="plan-cta" onclick="location.href='#contact'">相談する</button>
+        </div>
+        <div class="plan-card fade-in">
+          <div class="plan-name">企業PR動画</div>
+          <div class="plan-price">要<span>相談</span></div>
+          <div class="plan-period">HP掲載・長尺YouTube用</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="plan-feature"><span class="check yes">✓</span>長尺動画編集</li>
             <li class="plan-feature"><span class="check yes">✓</span>カラーグレーディング</li>
             <li class="plan-feature"><span class="check yes">✓</span>モーションテキスト</li>
-          </ul>
-          <button class="plan-cta" onclick="location.href='#contact'">相談する</button>
-        </div>
-        <div class="plan-card fade-in">
-          <div class="plan-name">プレミアム</div>
-          <div class="plan-price">¥120,000<span>〜</span></div>
-          <div class="plan-period">1本あたり（制限なし）</div>
-          <div class="plan-divider"></div>
-          <ul class="plan-features">
-            <li class="plan-feature"><span class="check yes">✓</span>カット編集・BGM</li>
-            <li class="plan-feature"><span class="check yes">✓</span>テロップ挿入</li>
-            <li class="plan-feature"><span class="check yes">✓</span>修正無制限</li>
-            <li class="plan-feature"><span class="check yes">✓</span>カラーグレーディング</li>
-            <li class="plan-feature"><span class="check yes">✓</span>アニメーション込み</li>
+            <li class="plan-feature"><span class="check yes">✓</span>撮影も対応可</li>
           </ul>
           <button class="plan-cta" onclick="location.href='#contact'">相談する</button>
         </div>
       </div>
 
-      <!-- アニメーションプラン -->
-      <div class="pricing-plans" id="tab-animation">
+      <!-- イラスト・デザインプラン -->
+      <div class="pricing-plans" id="tab-illust">
         <div class="plan-card fade-in">
-          <div class="plan-name">ショート</div>
-          <div class="plan-price">¥50,000<span>〜</span></div>
-          <div class="plan-period">30秒以内</div>
+          <div class="plan-name">イラスト制作</div>
+          <div class="plan-price">要<span>相談</span></div>
+          <div class="plan-period">1点あたり</div>
           <div class="plan-divider"></div>
           <ul class="plan-features">
-            <li class="plan-feature"><span class="check yes">✓</span>モーショングラフィックス</li>
-            <li class="plan-feature"><span class="check yes">✓</span>BGM・SE</li>
-            <li class="plan-feature"><span class="check yes">✓</span>修正2回まで</li>
-            <li class="plan-feature disabled"><span class="check no">✗</span>キャラクターアニメ</li>
-            <li class="plan-feature disabled"><span class="check no">✗</span>ナレーション収録</li>
+            <li class="plan-feature"><span class="check yes">✓</span>キャラクターデザイン</li>
+            <li class="plan-feature"><span class="check yes">✓</span>アイコン制作</li>
+            <li class="plan-feature"><span class="check yes">✓</span>４コマ漫画</li>
+            <li class="plan-feature"><span class="check yes">✓</span>撮影用の絵コンテ制作</li>
           </ul>
           <button class="plan-cta" onclick="location.href='#contact'">相談する</button>
         </div>
         <div class="plan-card popular fade-in">
-          <div class="plan-badge">人気No.1</div>
-          <div class="plan-name">スタンダード</div>
-          <div class="plan-price">¥120,000<span>〜</span></div>
-          <div class="plan-period">60秒以内</div>
+          <div class="plan-badge">人気</div>
+          <div class="plan-name">デザイン制作</div>
+          <div class="plan-price">要<span>相談</span></div>
+          <div class="plan-period">印刷物・販促物</div>
           <div class="plan-divider"></div>
           <ul class="plan-features">
-            <li class="plan-feature"><span class="check yes">✓</span>モーショングラフィックス</li>
-            <li class="plan-feature"><span class="check yes">✓</span>BGM・SE</li>
-            <li class="plan-feature"><span class="check yes">✓</span>修正3回まで</li>
-            <li class="plan-feature"><span class="check yes">✓</span>キャラクターアニメ</li>
-            <li class="plan-feature disabled"><span class="check no">✗</span>ナレーション収録</li>
+            <li class="plan-feature"><span class="check yes">✓</span>チラシ</li>
+            <li class="plan-feature"><span class="check yes">✓</span>パンフレット</li>
+            <li class="plan-feature"><span class="check yes">✓</span>名刺</li>
+            <li class="plan-feature"><span class="check yes">✓</span>印刷データ入稿対応</li>
           </ul>
           <button class="plan-cta" onclick="location.href='#contact'">相談する</button>
         </div>
         <div class="plan-card fade-in">
-          <div class="plan-name">フル</div>
-          <div class="plan-price">¥250,000<span>〜</span></div>
-          <div class="plan-period">制限なし</div>
+          <div class="plan-name">ナレーション・声優</div>
+          <div class="plan-price">要<span>相談</span></div>
+          <div class="plan-period">動画・アニメ・CM向け</div>
           <div class="plan-divider"></div>
           <ul class="plan-features">
-            <li class="plan-feature"><span class="check yes">✓</span>モーショングラフィックス</li>
-            <li class="plan-feature"><span class="check yes">✓</span>BGM・SE</li>
-            <li class="plan-feature"><span class="check yes">✓</span>修正無制限</li>
-            <li class="plan-feature"><span class="check yes">✓</span>キャラクターアニメ</li>
-            <li class="plan-feature"><span class="check yes">✓</span>ナレーション収録</li>
+            <li class="plan-feature"><span class="check yes">✓</span>CM・企業VPナレーション</li>
+            <li class="plan-feature"><span class="check yes">✓</span>アニメキャラクター声優</li>
+            <li class="plan-feature"><span class="check yes">✓</span>動画制作とのセット対応</li>
+            <li class="plan-feature"><span class="check yes">✓</span>複数キャスト対応</li>
           </ul>
           <button class="plan-cta" onclick="location.href='#contact'">相談する</button>
         </div>
       </div>
 
-      <!-- イラストプラン -->
-      <div class="pricing-plans" id="tab-illustration">
+      <!-- LP・サブスクプラン -->
+      <div class="pricing-plans" id="tab-lp">
         <div class="plan-card fade-in">
-          <div class="plan-name">シングル</div>
-          <div class="plan-price">¥15,000<span>〜</span></div>
-          <div class="plan-period">1点あたり</div>
+          <div class="plan-name">LP制作</div>
+          <div class="plan-price">¥30,000<span>〜 / ページ</span></div>
+          <div class="plan-period">1ページ単位での制作</div>
           <div class="plan-divider"></div>
           <ul class="plan-features">
-            <li class="plan-feature"><span class="check yes">✓</span>ラフ1案提出</li>
-            <li class="plan-feature"><span class="check yes">✓</span>修正2回まで</li>
-            <li class="plan-feature"><span class="check yes">✓</span>PNG納品</li>
-            <li class="plan-feature disabled"><span class="check no">✗</span>商用利用ライセンス</li>
-            <li class="plan-feature disabled"><span class="check no">✗</span>ベクター(AI)納品</li>
+            <li class="plan-feature"><span class="check yes">✓</span>デザイン〜コーディング一貫</li>
+            <li class="plan-feature"><span class="check yes">✓</span>スマホ対応（レスポンシブ）</li>
+            <li class="plan-feature"><span class="check yes">✓</span>お問い合わせフォーム</li>
+            <li class="plan-feature"><span class="check yes">✓</span>Vercel / GitHub 連携</li>
           </ul>
           <button class="plan-cta" onclick="location.href='#contact'">相談する</button>
         </div>
         <div class="plan-card popular fade-in">
-          <div class="plan-badge">人気No.1</div>
-          <div class="plan-name">ビジネス</div>
-          <div class="plan-price">¥35,000<span>〜</span></div>
-          <div class="plan-period">1点あたり</div>
+          <div class="plan-badge">サブスク</div>
+          <div class="plan-name">SNS企画・運用</div>
+          <div class="plan-price">¥50,000<span> / 月</span></div>
+          <div class="plan-period">月額サブスクリプション</div>
           <div class="plan-divider"></div>
           <ul class="plan-features">
-            <li class="plan-feature"><span class="check yes">✓</span>ラフ2案提出</li>
-            <li class="plan-feature"><span class="check yes">✓</span>修正3回まで</li>
-            <li class="plan-feature"><span class="check yes">✓</span>PNG・JPEG納品</li>
-            <li class="plan-feature"><span class="check yes">✓</span>商用利用ライセンス</li>
-            <li class="plan-feature disabled"><span class="check no">✗</span>ベクター(AI)納品</li>
+            <li class="plan-feature"><span class="check yes">✓</span>企画提案</li>
+            <li class="plan-feature"><span class="check yes">✓</span>撮影</li>
+            <li class="plan-feature"><span class="check yes">✓</span>毎月8本の動画編集</li>
+            <li class="plan-feature"><span class="check yes">✓</span>投稿スケジュール管理</li>
           </ul>
           <button class="plan-cta" onclick="location.href='#contact'">相談する</button>
         </div>
         <div class="plan-card fade-in">
-          <div class="plan-name">プロ</div>
-          <div class="plan-price">¥70,000<span>〜</span></div>
-          <div class="plan-period">1点あたり</div>
+          <div class="plan-name">カスタムプラン</div>
+          <div class="plan-price">要<span>相談</span></div>
+          <div class="plan-period">複数サービスの組み合わせ</div>
           <div class="plan-divider"></div>
           <ul class="plan-features">
-            <li class="plan-feature"><span class="check yes">✓</span>ラフ3案提出</li>
-            <li class="plan-feature"><span class="check yes">✓</span>修正無制限</li>
-            <li class="plan-feature"><span class="check yes">✓</span>PNG・JPEG納品</li>
-            <li class="plan-feature"><span class="check yes">✓</span>商用利用ライセンス</li>
-            <li class="plan-feature"><span class="check yes">✓</span>ベクター(AI)納品</li>
+            <li class="plan-feature"><span class="check yes">✓</span>動画 × LP のセット</li>
+            <li class="plan-feature"><span class="check yes">✓</span>アニメ × SNS運用</li>
+            <li class="plan-feature"><span class="check yes">✓</span>イラスト × デザイン</li>
+            <li class="plan-feature"><span class="check yes">✓</span>ご要望に合わせて柔軟対応</li>
           </ul>
           <button class="plan-cta" onclick="location.href='#contact'">相談する</button>
         </div>
       </div>
 
       <p class="pricing-note fade-in">
-        ※ 表示金額は目安です。ご要望・規模によって変わります。まずはお気軽にご相談ください。
+        ※ 表示金額は目安です。内容・規模によって変わります。まずはお気軽にご相談ください。
       </p>
+    </div>
+  </section>
+
+  <!-- ========== ポートフォリオ ========== -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="portfolio-header fade-in">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">クリエイターポートフォリオ</h2>
+        <p class="section-desc">所属クリエイターの作品をご覧いただけます。各分野のサンプル・実績をご確認ください。</p>
+      </div>
+      <div class="portfolio-placeholder fade-in">
+        <div class="portfolio-coming">
+          <div class="portfolio-coming-icon">🎨</div>
+          <div class="portfolio-coming-title">近日公開予定</div>
+          <p class="portfolio-coming-desc">
+            イラストレーター・動画クリエイター・デザイナーなど<br>
+            60名以上のポートフォリオを順次掲載していきます。
+          </p>
+          <a href="#contact" class="btn-primary" style="margin-top:24px; display:inline-flex;">作品を見たい方はこちら →</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -658,9 +624,11 @@
         <div class="footer-col">
           <h4>サービス</h4>
           <ul>
+            <li><a href="#services">オリジナルアニメ動画</a></li>
             <li><a href="#services">動画編集</a></li>
-            <li><a href="#services">アニメーション制作</a></li>
-            <li><a href="#services">イラスト作成</a></li>
+            <li><a href="#services">ナレーション・声優</a></li>
+            <li><a href="#services">イラスト制作</a></li>
+            <li><a href="#services">デザイン</a></li>
             <li><a href="#services">LP制作</a></li>
           </ul>
         </div>
@@ -680,6 +648,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
 </body>
 </html>

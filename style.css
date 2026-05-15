@@ -154,6 +154,28 @@ ul { list-style: none; }
   width: 100%;
 }
 
+/* タイトル下：実績画像 */
+.hero-images {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.hero-img {
+  flex: 1;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  opacity: 0.45;
+  transition: opacity var(--transition);
+}
+
+.hero-img:hover { opacity: 0.75; }
+
 .hero-eyebrow {
   font-size: 0.75rem;
   font-weight: 700;
@@ -175,9 +197,9 @@ ul { list-style: none; }
 }
 
 .hero-title {
-  font-size: clamp(2.8rem, 7vw, 5.6rem);
+  font-size: clamp(2rem, 4.8vw, 4rem);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.03em;
   color: #FFFFFF;
   margin-bottom: 36px;
@@ -186,6 +208,44 @@ ul { list-style: none; }
 .hero-title em {
   font-style: normal;
   color: var(--accent);
+  display: block;
+}
+
+.hero-title-sub {
+  display: block;
+  font-size: 0.45em;
+  font-weight: 700;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.02em;
+  margin-top: 12px;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.hero-tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.65);
+  background: rgba(255,255,255,0.04);
+  letter-spacing: 0.02em;
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+
+.hero-tag-pill:hover {
+  border-color: var(--accent);
+  color: white;
+  background: rgba(255,72,0,0.1);
 }
 
 .hero-sub-row {
@@ -238,6 +298,47 @@ ul { list-style: none; }
 }
 
 .btn-secondary:hover { border-color: rgba(255,255,255,0.6); color: #fff; }
+
+/* ヒーロー右カラム：実績スライダー */
+.hero-works {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-works-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-works-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.hero-works-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: white;
+}
+
+.hero-slider-wrap {
+  overflow: hidden;
+  padding: 0;
+}
+
+.hero-slider-wrap .works-track { gap: 16px; }
+
+.hero-slider-wrap .work-card {
+  flex: 0 0 100%;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+}
 
 /* ヒーロー下部のサービスティッカー */
 .hero-ticker {
@@ -948,6 +1049,42 @@ ul { list-style: none; }
 #form-message.success { background: #edfaf7; color: #059669; border: 1px solid #a7f3d0; display: block; }
 #form-message.error { background: #fff0f0; color: #dc2626; border: 1px solid #fca5a5; display: block; }
 
+/* ============================================
+   ポートフォリオ
+   ============================================ */
+#portfolio { background: var(--bg); }
+
+.portfolio-header { margin-bottom: 48px; }
+
+.portfolio-placeholder {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-coming {
+  text-align: center;
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 72px 48px;
+  max-width: 560px;
+  width: 100%;
+}
+
+.portfolio-coming-icon { font-size: 3rem; margin-bottom: 16px; }
+
+.portfolio-coming-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.portfolio-coming-desc {
+  font-size: 0.88rem;
+  color: var(--text-sub);
+  line-height: 1.85;
+}
+
 /* コンタクトセクション SNSリンク */
 .contact-sns { margin-top: 32px; }
 
@@ -1062,6 +1199,9 @@ ul { list-style: none; }
    ============================================ */
 @media (max-width: 900px) {
   :root { --section-pad: 72px 20px; }
+
+  .hero-body { grid-template-columns: 1fr; gap: 48px; }
+  .hero-works { order: -1; }
 
   .about-inner { grid-template-columns: 1fr; gap: 48px; }
 
